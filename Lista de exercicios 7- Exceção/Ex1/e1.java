@@ -30,8 +30,7 @@ import Excecao.SaldoException;
 	 	        System.out.println("Resultado é positivo ");
 	 	        
 	 	    if(numero1 > 1000 || numero2 > 1000) throw new Resultado();
-	
-	 	   //     System.out.println("Resultado é positivo ");
+		 	   
 	 	   System.out.println("Digite um valor para o Numerador"); 
 	 	   int numerador = sc.nextInt();
 	 	   
@@ -44,7 +43,7 @@ import Excecao.SaldoException;
 
 	      }catch (InputMismatchException erro1) {
 	        System.err.println("Não é permitido inserir letras, informe apenas números inteiros!");
-	        sc.nextLine(); //descarta a entrada errada do usuário	
+	        sc.nextLine(); 	
 	      }catch(ArithmeticException err){
 		        System.err.println("O número do divisor deve ser diferente de 0!");
 	      }finally{
